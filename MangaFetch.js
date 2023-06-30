@@ -6,12 +6,15 @@ const videoshow = require('videoshow');
 const probe = require('probe-image-size');
 const { execSync } = require('child_process');
 const puppeteer = require('puppeteer');
+require('dotenv').config();
 
 
 
 async function downloadMangaImages(mangaTitle, chapterIndex) {
   try {
-    await MFA.login('PekoPek0W0', 'Jx1184479102');
+    const password = process.env.MANGAPASSWORD;
+
+    await MFA.login('PekoPek0W0', password);
 
     // Get a manga:
     let manga = await MFA.Manga.getByQuery(mangaTitle);
@@ -119,7 +122,8 @@ function createSlideshowVideo(mangaTitle, imageFolder, musicFilePath) {
     console.error('Video created in:', output);
     (async () => {
       console.log(output);
-      await loginToTikTok("haiyunmao6@gmail.com", "Jx1184479102!", output, caption);
+      const password = process.env.TIKTOKPASSWORD;
+      await loginToTikTok("haiyunmao6@gmail.com", password, output, caption);
     })();
   })
 }
