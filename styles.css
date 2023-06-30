@@ -1,0 +1,297 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set background and text colors */
+body {
+  background-color: #f6f6f6;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Add some spacing and center the content */
+header,
+main,
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav h1 {
+  font-size: 24px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+nav ul li:hover a {
+  color: #ff4f5a;
+}
+
+nav ul li:hover::before {
+  transform: scaleX(1);
+}
+
+/* Style the hero section */
+#hero {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+  transition: background-position 0.3s ease;
+}
+
+#hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff4f5a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e63c48;
+  transform: scale(1.05);
+}
+
+/* Style the features section */
+#features {
+  background-color: transparent;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+
+#features h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#features ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#features ul li {
+  margin-bottom: 20px;
+  font-size: 20px;
+  position: relative;
+}
+
+#features ul li::before {
+  content: '\25CF';
+  position: absolute;
+  left: -20px;
+  color: #ee1d52;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+#features ul li:hover::before {
+  transform: scale(1);
+}
+
+/* Style the how-it-works section */
+#how-it-works {
+  padding: 40px;
+  background-color: transparent;
+}
+
+#how-it-works h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#how-it-works ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#how-it-works ol li {
+  margin-bottom: 20px;
+  font-size: 20px;
+  position: relative;
+}
+
+#how-it-works ol li::before {
+  content: '\25CF';
+  position: absolute;
+  left: -20px;
+  color: #ee1d52;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+#how-it-works ol li:hover::before {
+  transform: scale(1);
+}
+
+/* Style the contact section */
+#contact {
+  padding: 40px;
+  background-color: transparent;
+}
+
+#contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#contact p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgba(51, 51, 51, 0.4);
+  color: #fff;
+  padding: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+footer:hover {
+  background-color: rgba(51, 51, 51, 0.8);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* Background Animation */
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: backgroundAnimation 15s infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.background-animation {
+  background: linear-gradient(45deg, #ff6b6b, #556270, #ff6b6b);
+  background-size: 300% 300%;
+}
+
+.cta-button {
+  /* Add TikTok-inspired background gradient */
+  background: linear-gradient(45deg, #ee1d52, #ff4f5a);
+  /* Add manga-style text shadow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e63c48;
+  transform: scale(1.1) rotate(-5deg);
+}
+
+#features ul li:before {
+  /* Add manga-style bullet point */
+  content: '\25CF';
+  margin-right: 10px;
+  color: #ee1d52;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+#features ul li:hover:before {
+  transform: scale(1);
+}
+
+#how-it-works ol li:before {
+  content: '\25CF';
+  margin-right: 10px;
+  color: #ee1d52;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+#how-it-works ol li:hover:before {
+  transform: scale(1);
+}
