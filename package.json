@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "mangadex-full-api": "^5.12.1"
+  }
+}
