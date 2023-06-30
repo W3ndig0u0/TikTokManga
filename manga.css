@@ -1,0 +1,161 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set background and text colors */
+body {
+  background-color: #f6f6f6;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Add some spacing and center the content */
+header,
+main,
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav h1 a {
+  font-size: 24px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+nav h1 a:hover {
+  color: #ff4f5a;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff4f5a;
+}
+
+/* Style the manga fetcher section */
+#manga-fetcher {
+  background-color: transparent;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+
+#manga-fetcher h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#manga-fetcher form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#manga-fetcher label {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+#manga-fetcher input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+}
+
+#manga-fetcher button {
+  padding: 10px 20px;
+  background-color: #ff4f5a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#manga-fetcher button:hover {
+  background-color: #e63c48;
+}
+
+/* Style the manga viewer section */
+#manga-viewer {
+  background-color: transparent;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+
+#manga-viewer h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Style the video player section */
+#video-player {
+  background-color: transparent;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+
+#video-player h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgba(51, 51, 51, 0.4);
+  color: #fff;
+  padding: 2rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
