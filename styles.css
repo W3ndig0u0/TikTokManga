@@ -7,8 +7,7 @@
 
 /* Set background and text colors */
 body {
-  background-color: #f6f6f6;
-  color: #333;
+  color: #e7e7e7;
   font-family: Arial, sans-serif;
 }
 
@@ -37,7 +36,7 @@ nav {
 
 nav h1 {
   font-size: 24px;
-  color: #333;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: transform 0.3s ease;
@@ -55,7 +54,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #555;
+  color: #fff;
   font-size: 18px;
   transition: color 0.3s ease;
 }
@@ -125,7 +124,7 @@ nav ul li:hover::before {
 #features h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #333;
+  color: #fff;
 }
 
 #features ul {
@@ -161,7 +160,7 @@ nav ul li:hover::before {
 #how-it-works h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #333;
+  color: #fff;
 }
 
 #how-it-works ol {
@@ -197,7 +196,7 @@ nav ul li:hover::before {
 #contact h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #333;
+  color: #fff;
 }
 
 #contact p {
@@ -208,7 +207,7 @@ nav ul li:hover::before {
 /* Style the footer */
 footer {
   background-color: rgba(51, 51, 51, 0.4);
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   padding: 2rem;
   transition: background-color 0.3s ease;
 }
