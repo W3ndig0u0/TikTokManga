@@ -2,7 +2,7 @@
 
 # LEGACY
 
-**TikTokManga** is a next-generation manga reading application that brings the addictive, seamless vertical-swipe experience of short-form video platforms to the world of manga and manhwa. 
+**TikTokManga** is a manga reading application that brings the addictive, seamless vertical-swipe experience of short-form video platforms to the world of manga and manhwa. 
 
 ## 🌟 Overview
 
